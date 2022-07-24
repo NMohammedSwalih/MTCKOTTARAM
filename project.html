@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MTC GROCERY</title>
+<mwta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="project.css">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+video {
+  width: 100%;
+  height:100%;
+  }
+
+</style>
+
+
+<style>
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 16px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: black;
+  top: 8.5%;
+  border-radius: 40px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: black;
+  padding: 1px 2px;
+  border: solid;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  opacity: 2;
+}
+.mySlides {display:none;
+  height: 550px;
+}
+
+</style>
+
+<body>
+
+  <div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+  
+    <button type="submit" class="btn">Login</button></a>
+</div></form>
+<div class="container">
+<a href="signup form.html">
+    <button onclick="signup" class="btn2">Signup</button>
+  </div></div></a>
+
+
+	<div class="w3-container">
+     <div class="w3-bar w3-black">  
+       <a href="project.html" target="_blank" class="logg">
+       <img src="logo.png" class="img"></a>
+  <h1>MTC MOHAMMED TRADING COMPANY</h1>
+</div>
+ <div class="w3-bar w3-black">
+ </div></div>
+
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Wholesale</a>
+  <a href="#" class="w3-bar-item w3-button">Retail</a>
+</div>
+
+
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+</div>
+
+<div class="w3-content w3-section" style="max-width:1500px">
+  <img class="mySlides" src="ABACA.png" style="width:100%">
+  <img class="mySlides" src="ABACADA.png" style="width:100%">
+  <img class="mySlides" src="DDADA.png" style="width:100%">
+</div>
+
+
+<video width="400" controls autoplay>
+  <source src="mtc video.mp4" type="video/Mp4">
+  <source src="mtc video.ogg" type="video/ogg">
+</video>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
