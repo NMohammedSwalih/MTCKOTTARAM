@@ -1,0 +1,39 @@
+.bg-img{
+	color: white;
+}
+.btn2{
+  background-color: #58ccc0;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: solid;
+  padding:1px 2px;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin: 0px;
+}
+.btn2:hover{
+	opacity: 50;
+}
+.w3-container
+{
+	text-align: center;
+	background-color: white;
+	color: white;
+	border: none;
+	width: 100%;
+}
+
+.container3{
+	float: right;
+}
+
+.img{
+	width: 13%;
+	float: left;
+	margin-top: 0px;
+	height:100%;
+}
+.logg{
+cursor: pointer;
+}
